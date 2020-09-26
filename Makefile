@@ -41,7 +41,7 @@ clean:
 	rm -rf modeling_short.html
 
 gh-pages:
-	cd 127.0.0.1:8050 && touch .nojekyll && git init && git add * && git add .nojekyll && git commit -m "update" && git remote add origin https://github.com/covid19-dash/covid19-dash.github.io.git && git push -f origin master
+	cd 127.0.0.1:8050 && touch .nojekyll && git init && git add * && git add .nojekyll && git commit -m "update" && git remote add origin https://github.com/ZWcore/ZWcore.github.io.git && git push -f origin master
 	
 all: gh-pages
 
