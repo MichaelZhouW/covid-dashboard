@@ -11,7 +11,7 @@ html:
 	# Now build the app
 	export DEBUG=False && python3 app.py &
 	sleep 30
-	wget -r http://127.0.0.1:8050/ 
+	wget -r http://127.0.0.1:8050/
 	wget -r http://127.0.0.1:8050/_dash-layout 
 	wget -r http://127.0.0.1:8050/_dash-dependencies
 	sed -i 's/_dash-layout/_dash-layout.json/g' 127.0.0.1:8050/_dash-component-suites/dash_renderer/*.js 
@@ -28,7 +28,7 @@ html:
 	ps | grep python | awk '{print $$1}' | xargs kill -9	
 
 update:
-	cd COVID-19 && git pull
+	cd ZWcore && git pull
 
 submodules:
 	git submodule init
