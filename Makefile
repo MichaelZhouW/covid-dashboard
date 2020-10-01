@@ -28,7 +28,7 @@ html:
 	ps | grep python | awk '{print $$1}' | xargs kill -9	
 
 update:
-	cd ZWcore && git pull
+	cd COVID-19 && git pull
 
 submodules:
 	git submodule init
